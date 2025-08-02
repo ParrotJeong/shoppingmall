@@ -16,7 +16,7 @@ public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
-    public Long singUp(UserDto.SignUpRequest request) {
+    public Long signUp(UserDto.SignUpRequest request) {
         // 1. 로그인 아이디 중복 확인
         validateDuplicateUser(request.getLoginId());
 
